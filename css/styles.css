@@ -1,0 +1,529 @@
+/* Скидання по тегам*/
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #FFFFFF;
+    color: #434455;
+
+}
+
+.container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+input {
+    font-family: inherit;
+}
+
+/* Секція Навігації*/
+.header{
+    border-bottom: 1px solid #e7e9fc;
+        max-width: 1440px;
+        margin: auto;
+        box-shadow: 0 1px 6px 0  rgba(46, 47, 66, 0.08),
+         0 1px 1px 0  rgba(46, 47, 66, 0.16), 
+        0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+.header-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-bottom: 24px; */
+    /* padding-top: 24px; */
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: inline-block;
+    font-family: "Raleway",
+        sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+}
+.footer .logo{
+    margin-bottom: 16px;
+}
+.logo-header{
+    margin-right: 76px;
+}
+.logo-header-text{
+color: #2E2F42;
+}
+
+.nav-list{
+    display: flex;
+    gap: 40px;
+}
+.nav-list-item{
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+   
+}
+
+
+.nav-list-item:hover,
+.nav-list-item:focus{
+    color:#404BBF;
+}
+.nav-list-item.current{
+    color: #404BBF;
+
+}
+.nav-list-item.current::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+
+}
+
+
+.adress-header{
+    
+    font-style: normal;
+}
+.contacts{
+display: flex;
+gap: 40px;
+}
+
+.contacts-item{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+}
+.contacts-item:hover,
+ .contacts-item:focus {
+    color: #404BBF;
+}
+/* Секція Лого(Hero)*/
+.hero {
+    display: flex;
+    max-width: 1440px;
+
+    margin: 0 auto;
+    padding: 188px 0;
+
+    background-color: #2E2F42;
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-optim.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero-wrap{
+    text-align: center;
+
+   
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 496px;
+    margin-bottom: 48px;
+}
+.hero-btn{
+    display: block;
+    cursor: pointer;
+    background: #4D5AE5;
+    font-family: "Roboto",  sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    border:none;
+    border-radius: 4px;
+        padding: 16px 32px;
+        min-width: 169px;
+        height: 56px;
+        margin: auto;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+.hero-btn:hover, 
+.hero-btn:focus{
+    background-color: #404BBF;
+}
+
+/* Секція Проекти*/
+.section{
+    padding-bottom: 120px;
+    padding-top: 120px;
+    }
+.feature-list{
+    display: flex;
+    gap: 24px;
+}
+.feature-list-item{
+    width: calc((100% - 72px) / 4);
+}
+.feature-list-logo{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #8e8f99;
+border-radius: 4px;
+background: #f4f4fd;
+height: 112px;
+
+padding-bottom: 24px;
+padding-top: 24px;
+margin-bottom: 8px;
+}
+.feature-list-icon{
+
+}
+.feature-list-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 8px;
+    }
+.feature-list-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+
+/*Секція Команда*/
+.team{
+    background-color:#F4F4FD ;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2E2F42;
+    margin-bottom: 72px;
+
+}
+.team-list{
+    display: flex;
+    gap: 24px;
+
+}
+.team-card{
+        background: #FFFFFF;
+        border-radius: 0 0 4px 4px;
+        /* padding: 0px 0px 32px; */
+        width: 264px;
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-card-img{
+    /* margin-bottom: 32px; */
+}
+.team-card-wraper{
+    padding: 32px 0;
+
+}
+.team-card-title{
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2E2F42;
+        margin-bottom: 8px;
+}
+
+.team-card-text{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #434455;
+        margin-bottom: 8px;
+}
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
+.social-list-item{
+    /* display: flex;
+    align-items: center;
+        justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%; */
+   
+}
+
+.social-list-link{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: #4D5AE5;
+        border-radius: 50%;
+         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: #404BBF;
+}
+
+.social-icon{
+fill: #f4f4fd;
+}
+
+/*Секція портфоліо*/
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+        row-gap: 48px;
+        column-gap: 24px;
+        padding: 0;
+        margin: 0;
+}
+.portfolio-card{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-card:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.portfolio-card:hover .overlay{
+        transform: translateY(0);
+}
+.portfolio-img-wraper{
+    position: relative;
+        overflow: hidden;
+}
+.overlay{
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        transform: translatey(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: #f4f4fd;
+        padding: 40px 32px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+}
+
+.portfolio-card-wraper{
+    padding: 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+
+    
+}
+
+.portfolio-card-title{
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        margin-bottom: 8px;
+}
+.portfolio-card-text{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+
+/* футер */
+.footer{
+    background-color: #2E2F42;
+    padding: 100px 0;
+}
+.footer>.container {
+    display: flex;
+    align-items: baseline;
+}
+.footer-logo-wraper{
+    margin-right: 120px;
+}
+
+.footer-social-wraper{
+
+}
+.logo-footer{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #F4F4FD;
+    margin-bottom: 16px;
+}
+.footer-text{
+    font-weight: 400;
+    font-size: 16px;
+     line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:#F4F4FD;
+    max-width: 264px;
+}
+.footer-social-text{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin-bottom: 16px;
+}
+.footer-social-list{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+}
+.footer-social-item{
+   
+} 
+
+.footer-social-link{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        fill: #f4f4fd;
+        background-color: #4D5AE5;
+        border-radius: 50%;
+         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31D0AA;
+}
+
+
+
+/* Modal */
+.backdrop{
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height:100%;
+
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+
+    transition: opacity 400ms ease;
+
+
+}
+.backdrop .is-open{
+    opacity: 1;
+    pointer-events: initial;
+    visibility: visible;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translateX(-50%) 
+    translateY(-50%);
+    width: 517px;
+    min-height: 700px;
+}
+
+.backdrop .is-open .modal{
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+}

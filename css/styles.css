@@ -491,39 +491,3 @@ fill: #f4f4fd;
 
 
 /* Modal */
-.backdrop{
-    display: flex;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height:100%;
-
-    opacity: 0;
-    pointer-events: none;
-    display: none;
-
-    transition: opacity 400ms ease;
-
-
-}
-.backdrop .is-open{
-    opacity: 1;
-    pointer-events: initial;
-    visibility: visible;
-}
-.modal{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    
-    transform: translateX(-50%) 
-    translateY(-50%);
-    width: 517px;
-    min-height: 700px;
-}
-
-.backdrop .is-open .modal{
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 1;
-}

@@ -657,9 +657,9 @@ fill: #f4f4fd;
 }
 
 .modal-form {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 24px; */
 }
 
 .modal-caption {
@@ -783,10 +783,14 @@ fill: #f4f4fd;
 }
 
 .modal-send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 169px;
     width: 169px;
     height: 56px;
     margin: 0 auto;
+    
     background-color: #4d5ae5;
     color: white;
     border: none;

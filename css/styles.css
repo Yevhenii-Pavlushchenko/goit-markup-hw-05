@@ -574,7 +574,6 @@ fill: #f4f4fd;
 
 /* Modal */
 .modal-overlay {
-    
     position: fixed;
     z-index: 999;
     display: flex;

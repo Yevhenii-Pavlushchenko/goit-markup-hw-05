@@ -546,7 +546,7 @@ fill: #f4f4fd;
     border-radius: 4px;
     padding: 8px 24px;
     background: #4d5ae5;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     border: none;
 
@@ -574,6 +574,7 @@ fill: #f4f4fd;
 
 /* Modal */
 .modal-overlay {
+    
     position: fixed;
     z-index: 999;
     display: flex;
@@ -647,6 +648,7 @@ fill: #f4f4fd;
 .modal-form {
     display: flex;
     flex-direction: column;
+    gap: 24px;
 }
 
 .modal-caption {

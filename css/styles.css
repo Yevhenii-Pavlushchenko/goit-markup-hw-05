@@ -783,14 +783,14 @@ fill: #f4f4fd;
 }
 
 .modal-send-btn {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     min-width: 169px;
     width: 169px;
     height: 56px;
     margin: 0 auto;
-    
+
     background-color: #4d5ae5;
     color: white;
     border: none;

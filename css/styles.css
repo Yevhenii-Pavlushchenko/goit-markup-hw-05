@@ -577,14 +577,9 @@ fill: #f4f4fd;
     background-color: #31D0AA;
 }
 
-.subscribe-btn-text {
-        text-align: center;
-        color: #fff;
-        
-}
-
 .subscribe-btn-img {
     fill: #fff;
+    margin-left: 16px;
 
 }
 

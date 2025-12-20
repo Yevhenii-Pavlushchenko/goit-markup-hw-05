@@ -3,8 +3,8 @@ body{
     font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
     color: #434455;
-
 }
+
 
 .container {
         max-width: 1158px;
@@ -780,6 +780,9 @@ fill: #f4f4fd;
 
 .privacy-link {
     color: #4d5ae5;
+
+   
+    
 }
 
 .modal-send-btn {
